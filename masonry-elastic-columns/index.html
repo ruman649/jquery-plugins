@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            border: 1px solid red;
+            padding: 3px;
+
+        }
+        .item img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="columns">
+        <div class="item">
+            Grid Item 1 Lorem ipsum dolor sit amet.
+            <img src="../img/b-1.jpg" alt="">
+        </div>
+        <div class="item">
+            Grid Item 1 Lorem ipsum dolor sit amet.
+            <img src="../img/img-1.jpg" alt="">
+        </div>
+        <div class="item">
+            Grid Item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laboriosam labore omnis?
+            Laborum, provident consectetur.
+        </div>
+        <div class="item">
+            Grid Item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laboriosam labore omnis?
+            Laborum, provident consectetur.
+        </div>
+        <div class="item">
+            Grid Item 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aut!
+            <img src="../img/img-4.jpg" alt="">
+        </div>
+        <div class="item">
+            Grid Item 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aut!
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+
+    <script src="./masonry-elastic-columns/dist/elastic-columns.min.js"></script>
+
+
+    <script>
+        var $container = $('.columns');
+        $container.elasticColumns(
+            {
+                columns: 3,
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/jquery.flipster/dist/jquery.flipster.min.css">
+</head>
+
+<body>
+
+    <div id="coverflow">
+        <ul class="flip-items">
+            <li data-flip-title="Title 1">
+                <img src="../img/b-1.jpg">
+            </li>
+            <li data-flip-title="Title 2">
+                <img src="../img/b-2.jpg">
+            </li>
+            <li data-flip-title="Title 3">
+                <img src="../img/b-3.jpg">
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script src="../node_modules/jquery.flipster/dist/jquery.flipster.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(function () {
+                var coverflow = $("#coverflow").flipster({
+                    style: 'flat',
+                    fadeIn: 400,
+                    loop: true,
+                    // autoplay: true,
+                    nav: true,
+
+                    keyboard: true,
+                });
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
